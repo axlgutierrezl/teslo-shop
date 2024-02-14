@@ -1,7 +1,7 @@
 import { titleFont } from '@/config/fonts';
 import Link from 'next/link';
 
-export default function () {
+const Page = () =>  {
   return (
     <div className="flex flex-col min-h-screen pt-32 sm:pt-52">
 
@@ -44,3 +44,6 @@ export default function () {
     </div>
   );
 }
+
+Page.displayName = 'Page';
+export default Page;

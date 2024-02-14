@@ -1,7 +1,8 @@
+import React from 'react';
 import { PageNotFound } from '@/components';
 import Link from 'next/link';
 
-export default function () {
+const Notfound = () =>  {
   return (
     // <div>
     //   <h1>404 Not Found</h1>
@@ -11,3 +12,6 @@ export default function () {
   );
 
 }
+
+Notfound.displayName = 'Notfound';
+export default Notfound;

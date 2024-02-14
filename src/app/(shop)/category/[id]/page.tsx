@@ -14,7 +14,7 @@ interface Props {
 const seedProducts = initialData.products;
 
 
-export default function ({ params }: Props) {
+const Page = ({ params }: Props) => {
   const { id } = params;
   const products = seedProducts.filter(product => product.gender === id);
   const labels: Record<Category, string> = {
@@ -45,3 +45,6 @@ export default function ({ params }: Props) {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

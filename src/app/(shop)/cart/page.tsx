@@ -1,3 +1,4 @@
+import React from 'react';
 import { QuantitySelector, Title } from "@/components";
 import { initialData } from "@/seed/seed";
 import Image from "next/image";
@@ -10,7 +11,7 @@ const productsInCart = [
   initialData.products[2],
 ]
 
-export default function () {
+const Page = () => {
   
   // redirect("/empty");
 
@@ -107,3 +108,6 @@ export default function () {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

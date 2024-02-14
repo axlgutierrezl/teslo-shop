@@ -9,7 +9,7 @@ const productsInCart = [
   initialData.products[2],
 ]
 
-export default function () {
+const Page = () => {
   return (
     <div className="flex justify-center items-center mb-72 px-10 sm:px-0">
       <div className="flex flex-col w-[1000px]">
@@ -93,7 +93,7 @@ export default function () {
               <p className="mb-5">
                 {/* Disclaimer */}
                 <span className="text-xs">
-                  Al hacer click en "Colocar orden",aceptas nuestros <a href="#" className="underline">terminos y condiciones</a> y <a href=""className="underline">politica de privacidad</a>
+                  Al hacer click en &quotColocar orden&ldquo,aceptas nuestros <a href="#" className="underline">terminos y condiciones</a> y <a href="" className="underline">politica de privacidad</a>
 
                 </span>
               </p>
@@ -113,3 +113,6 @@ export default function () {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

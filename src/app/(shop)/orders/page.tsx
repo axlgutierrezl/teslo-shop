@@ -4,7 +4,7 @@ import { Title } from '@/components';
 import Link from 'next/link';
 import { IoCardOutline } from 'react-icons/io5';
 
-export default function() {
+const Page = () => {
   return (
     <>
       <Title title="Ordenes" />
@@ -75,3 +75,6 @@ export default function() {
     </>
   );
 }
+
+Page.displayName = 'Page';
+export default Page;

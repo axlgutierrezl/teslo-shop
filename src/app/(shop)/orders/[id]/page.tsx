@@ -18,7 +18,7 @@ interface Props {
 
 }
 
-export default function ({ params }: Props) {
+const Page = ({ params }: Props) => {
 
   const { id } = params;
 
@@ -140,3 +140,6 @@ export default function ({ params }: Props) {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

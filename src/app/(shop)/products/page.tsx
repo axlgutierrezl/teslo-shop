@@ -1,4 +1,4 @@
-export default function () {
+const Page = () =>  {
   return (
     <div>
       <h1>Products Page</h1>
@@ -6,3 +6,6 @@ export default function () {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

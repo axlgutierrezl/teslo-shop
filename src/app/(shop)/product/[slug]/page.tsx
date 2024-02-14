@@ -10,7 +10,7 @@ interface Props {
   }
 }
 
-export default function ({ params }: Props) {
+const Page = ({ params }: Props) => {
   const slug = params.slug;
   const product = initialData.products.find(product => product.slug === slug);
 
@@ -62,3 +62,6 @@ export default function ({ params }: Props) {
   )
 
 }
+
+Page.displayName = 'Page';
+export default Page;

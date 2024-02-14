@@ -1,7 +1,7 @@
 
 import { PageNotFound } from '@/components';
 
-export default function () {
+const NotFound = () =>{
   return (
     // <div>
     //   <h1>404 Not Found</h1>
@@ -11,3 +11,6 @@ export default function () {
   );
 
 }
+
+NotFound.displayName = 'NotFound';
+export default NotFound;
