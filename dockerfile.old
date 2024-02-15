@@ -1,0 +1,20 @@
+FROM node:18-alpine
+
+#carpeta raiz
+WORKDIR /app
+
+#copia el archivo package
+COPY package.json /
+
+RUN npm install
+
+#agrega todos los archivos que se tiene a la raiz
+COPY . /
+
+RUN npm run build
+
+#expose el puerto 3000
+EXPOSE 3000
+
+#ejecucion
+CMD ["npm" , "start"]
